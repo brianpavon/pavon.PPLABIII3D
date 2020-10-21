@@ -1,4 +1,4 @@
-
+let frmAnuncioAutos;
 export default function crearTabla(lista)
 {
     
@@ -60,10 +60,18 @@ function agregarManejadorTR(tr)
     {
         tr.addEventListener('click', function(e){
             
+            /*listaAnunciosAutos = obtenerAnuncios();*/
+            frmAnuncioAutos = document.forms[0];
             alert(e.target.parentNode.dataset.id);
-            //let btnEliminar = document.getElementById('btnEliminar');
-            //btnEliminar.enable;
-            //const btnEliminar = document.createElement()
+            frmAnuncioAutos.titulo.value = e.target.parentNode.dataset.titulo;        
+            frmAnuncioAutos.transaccion.value = e.target.parentNode.dataset.transaccion ;       
+            frmAnuncioAutos.descripcion.value = e.target.parentNode.dataset.descripcion;
+            frmAnuncioAutos.precio.value = e.target.parentNode.dataset.precio;
+            frmAnuncioAutos.puertas.value = e.target.parentNode.dataset.puertas;
+            frmAnuncioAutos.kms.value = e.target.parentNode.dataset.kms;
+            frmAnuncioAutos.potencia.value = e.target.parentNode.dataset.potencia;
+            
         });
     }
 }
+
