@@ -9,23 +9,27 @@ table,th,td
     border: 1px solid black;
     padding: 5px;
 }
-header,footer/*aca como ambos son iguales, hago las 2 etiquetas con estas caracteristicas*/
+thead
+{
+    background-color: tomato;
+}
+header,footer
 {
     background-color:lightblue;
     display: flex;
-    flex-direction: column;/*pongo los hijos en columnas*/
-    align-items: center;/*alineao los contenidos */            
+    flex-direction: column;
+    align-items: center;           
 }
 header
 {
-    position: sticky;
-    top: 0px;
+    position: sticky;    
+    margin-bottom: 1px;
 }
 
 nav ul
 {
     display: flex;
-    list-style-type: none;/*le borro los puntitos que vienen por default*/
+    list-style-type: none;
     padding: 0px;
 }
 
@@ -36,35 +40,39 @@ nav li
 
 nav a
 {
-    color: white;
+    color: black;
     text-decoration: none;
-    /*background-color: cadetblue;
-    padding: 10px 20px;
-    border: 1px solid cyan;
-    border-radius: 5px;*/
-    
 }
 
 .importante
 {
-    /*background-color: yellow;
-    border: 1px dashed red;
-    margin: 0px;*/
     padding: 15px;
     text-align: center;
     font-size: 30px;
 }
 
-footer p/*pongo el parrafo en blanco*/
+footer p
 {
-    color: white;
+    color: black;
 }
 
-@media(min-width: 800px)/*a medida que cruce los 800px hago otra cosa, aplico otras reglas*/
+.logo
+{
+    width:5%;
+}
+.titulo
+{
+    width: 100%;
+}
+.iconos
+{
+    width: 2%;
+}
+@media(min-width: 800px)
 {
     header,footer
     {                
-        flex-direction: row;/*pongo los hijos en columnas*/
+        flex-direction: row;
         justify-content: space-between;
     }
 }
