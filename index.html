@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+        integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <script src="./js/script.js" type="module" defer></script>
+    <title>Primer Parcial Pavon Brian</title>
+  </head>
+  <body>
+    <header>
+      <img class="logo" src="./images/imagenFooter.jpg" alt="imagen del footer" />
+      <nav>
+        <ul>
+          <li><a href="">Nosotros</a></li>
+          <li><a href="">Anuncios</a></li>
+          <li><a href="">Blog</a></li>
+          <li><a href="">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+    
+    <p class="administracion">Administracion</p>    
+    <img class="imgPrincipal"src="./images/imagenPrincipal.jpg" alt="auto fachero"/>
+    <div class="formulario">
+        <form action="#">
+            <fieldset>
+                <legend>Información del Anuncio</legend>
+                <!--ID OCULTO-->
+                <input type="hidden" name="id" >
+                <!--Titulo-->
+                <label for="titulo">Titulo:</label>
+                <br>
+                <input type="text" name="txtTitulo" id="titulo" placeholder="Titulo" required>
+                <br>
+                <!--Seccion radio button-->
+                <label >Transaccion:</label>
+                <br>
+                <label for="venta">Venta</label>
+                <input type="radio" name="transaccion" id="venta" value="venta">
+                <label for="alquiler">Alquiler</label>
+                <input type="radio" name="transaccion" id="alquiler" value="alquiler">
+                <br>
+                <!--Descripcion-->
+                <label for="descripcion">Descripcion:</label>
+                <br>
+                <input type="text" name="txtDescripcion" id="descripcion" placeholder="Descripcion" required>
+                <br>
+                <!--Precio-->
+                <label for="precio">Precio:</label>
+                <br>
+                <input type="text" name="txtPrecio" id="precio" placeholder="Precio" required>
+                <br>
+                <!--Varias opciones-->
+                <img class="iconos" src="./images/icono1.svg" alt="iconoUno">
+                <input type="text" name="txtPuertas" id="puertas" required placeholder="Puertas">
+                <img class="iconos" src="./images/icono2.svg" alt="iconoDos">
+                <input type="text" name="txtPuertas" id="kms" required placeholder="KMs">
+                <img class="iconos" src="./images/icono3.svg" alt="iconoTres">
+                <input type="text" name="txtPuertas" id="potencia" required placeholder="Potencia">
+            </fieldset>
+            <!--Botones-->
+            <input type="submit" id="btnPrincipal" value="Guardar" class="imgFondo">
+            <input type="button" id="btnEliminar" value="Eliminar" class="invisible boton">
+            <input type="button" id="btnCancelar" value="Cancelar" class="invisible boton">
+        </form> 
+    </div>
+    <div id="divTabla" class="tabla">
+        
+    </div>
+    <footer>
+        <nav>
+          <ul>
+            <li><a href="">Nosotros</a></li>
+            <li><a href="">Anuncios</a></li>
+            <li><a href="">Blog</a></li>
+            <li><a href="">Contacto</a></li>
+          </ul>
+        </nav>
+        <p>Todos los derechos Reservados para <b>Brian Pavon</b> 2021 &copy</p>
+      </footer>
+
+  </body>
+</html>
